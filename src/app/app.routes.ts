@@ -1,10 +1,9 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'rates', pathMatch: 'full' },
+  { path: '', redirectTo: 'assets', pathMatch: 'full' },
   {
-    path: 'rates',
-    loadComponent: () =>
-      import('./modules/rates/rates.component').then((m) => m.RatesComponent),
+    path: 'assets',
+    loadChildren: () => import('./modules/assets/assets.routes'),
   },
 ];
