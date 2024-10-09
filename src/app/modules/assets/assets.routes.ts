@@ -1,5 +1,4 @@
-import { Route, Routes } from '@angular/router';
-import { AssetsComponent } from './assets.component';
+import { Routes } from '@angular/router';
 import { assetsInitialResolver } from './resolver/assets-initial.resolver';
 
 export default [

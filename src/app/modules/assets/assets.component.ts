@@ -51,7 +51,7 @@ export class AssetsComponent implements OnInit {
 
   searchHandler(event: Event) {
     const search = (event.target as HTMLInputElement).value;
-    const queryParams: Params = { search};
+    const queryParams: Params = { search };
     this.router.navigate(
       [],
       {
